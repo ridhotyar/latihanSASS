@@ -1,0 +1,84 @@
+//CSS Biasa
+// .header ul, 
+// .footer ul {
+//     margin : 0;
+//     padding: 0;
+//     list-style: none;
+// }
+
+// .header ul li,
+// .footer ul li {
+//     display: inline-block;
+
+// }
+
+// .header ul li {
+
+// }
+
+// .footer ul li {
+
+// }
+
+//Prilaku yg di atas akan diubah dengan SASS dan hasilnya sebagai berikut
+//Penerapan mixin
+// simple mixin
+//@mixin [nama mixin(argumen/parameter)]
+@mixin inline-list {
+    margin : 0;
+    padding : 0;
+    list-style: none;
+    li {
+        display: inline-block;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.header ul {
+    //pemanggilan mixin
+    //@include [nama mixin]
+    @include inline-list();
+    li {
+        background-color: coral;
+        padding: 0.7em;
+        a {
+            color: white;
+        }
+    }
+}
+
+.footer ul {
+    @include inline-list();
+    li {
+        background-color: blue;
+        padding: .6em;
+        a {
+            color: white;
+        }
+    }
+}
+
+//Argumen pada mixins
+//nilai default ($variabel : [nilai default]
+// lebih dari satu variabel dipisahkan dgn koma
+@mixin flex-box($direction: row){
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: $direction;
+}
+.container {
+    @include flex-box();
+    width: 600px;
+    height: 400px;
+    background-color: bisque;
+    .box {
+        width: 60px;
+        height: 60px;
+        background-color: brown;
+        text-align: center;
+        line-height: 60px;
+    }
+}

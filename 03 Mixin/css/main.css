@@ -1,0 +1,54 @@
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header ul li {
+  display: inline-block;
+}
+.header ul li a {
+  text-decoration: none;
+}
+.header ul li {
+  background-color: coral;
+  padding: 0.7em;
+}
+.header ul li a {
+  color: white;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer ul li {
+  display: inline-block;
+}
+.footer ul li a {
+  text-decoration: none;
+}
+.footer ul li {
+  background-color: blue;
+  padding: 0.6em;
+}
+.footer ul li a {
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 600px;
+  height: 400px;
+  background-color: bisque;
+}
+.container .box {
+  width: 60px;
+  height: 60px;
+  background-color: brown;
+  text-align: center;
+  line-height: 60px;
+}/*# sourceMappingURL=main.css.map */
