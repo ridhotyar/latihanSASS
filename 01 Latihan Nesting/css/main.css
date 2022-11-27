@@ -1,0 +1,30 @@
+body {
+  background-color: aquamarine;
+}
+
+.main {
+  background-color: aliceblue;
+}
+.main .main-heading {
+  font-size: 2em;
+}
+.main .main-paragraph {
+  font-size: 1.4em;
+}
+
+.main h1, .main p, footer h1, footer p {
+  letter-spacing: 1px;
+}
+
+.container .main {
+  background-color: salmon;
+}
+.main-heading {
+  background-color: azure;
+}
+.main-paragraph {
+  background-color: brown;
+}
+.main:hover {
+  background-color: cadetblue;
+}/*# sourceMappingURL=main.css.map */

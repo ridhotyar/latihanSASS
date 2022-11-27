@@ -1,0 +1,40 @@
+body {
+    background-color:aquamarine;
+}
+
+.main {
+    background-color: aliceblue;
+
+    .main-heading {
+        font-size: 2em;
+    }
+
+    .main-paragraph {
+        font-size: 1.4em;
+    }
+}
+
+.main, footer {
+    h1, p {
+        letter-spacing: 1px;
+    }
+}
+
+// membuat sesuatu dgn &, liat hasilnya
+.main {
+    .container & {
+        background-color: salmon;
+    }
+
+    &-heading {
+        background-color: azure;
+
+    }
+    &-paragraph {
+        background-color: brown;
+    }
+
+    &:hover {
+        background-color: cadetblue;
+    }
+}
