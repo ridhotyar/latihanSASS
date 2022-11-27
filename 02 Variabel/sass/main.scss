@@ -1,0 +1,53 @@
+// CSS Variabel
+//dengan root, semua memiliki akses variabel.
+
+// :root {
+//     --warnaUtama : #3F0071;
+//     --warnaSekonderi : #FB2576;
+//     --warnaTulisan : #FEFCF3;
+// }
+
+// body {
+//     background-color: var(--warnaUtama);
+// }
+
+// h1, p {
+//     color: var(--warnaTulisan);
+// }
+
+// SASS Variable
+// pada sass, "-" atau "_" dianggap sama
+
+//variabel global
+// $primary-Color : #3F0071;
+// $secondaryColor : #FB2576;
+
+// body {
+//     //contoh variabel lokal, berlaku juga untuk elemen turunannya
+//     $warnalokal : #434242;
+
+//     //contoh menjadikan variabel lokal menjadi global
+//     $textColor : #FEFCF3 !global;
+//     background-color: $warnalokal;
+    
+// }
+
+// h1, p {
+//     color: $textColor;
+// }
+
+//menyimpan beberapa nilai pada sebuah variabel [MAP]
+// $alert-danger : red;
+// $alert-succes : green;
+// $alert-warning : orange;
+
+//contoh variabel mapping key-value
+$alert: (
+    'danger' : red,
+    'succes' : green,
+    'warning' : orange
+);
+
+h1 {
+    color : map-get($alert , 'succes' );
+}
