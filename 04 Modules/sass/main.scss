@@ -1,0 +1,30 @@
+//CSS Biasa
+// .header ul, 
+// .footer ul {
+//     margin : 0;
+//     padding: 0;
+//     list-style: none;
+// }
+
+// .header ul li,
+// .footer ul li {
+//     display: inline-block;
+
+// }
+
+// .header ul li {
+
+// }
+
+// .footer ul li {
+
+// }
+
+//cara memanggil nama file yang lain, tidak perlu menuliskan "_" dan "ekstensi file"
+//bisa juga diikutkan nama folder, @import '[namafolder]/mixin'
+
+
+// @use 'modules/mixin'; -> tidak dipanggil disini tetapi hanya dipanggil pada halaman yang membutuhkan saja
+@use 'modules/header';
+@use 'modules/container';
+@use 'modules/footer';
