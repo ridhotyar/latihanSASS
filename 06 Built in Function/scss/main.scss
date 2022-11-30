@@ -1,0 +1,41 @@
+$warna-dasar: salmon;
+
+@mixin heading(){
+    color: $warna-dasar;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+
+h1 {
+    @include heading();
+}
+
+h2 {
+    @include heading();
+    text-align: center;
+}
+
+//Built-in Modules : Color
+// adjust-Color()
+/*color.adjust($color,
+  $red: null, $green: null, $blue: null,
+  $hue: null, $saturation: null, $lightness: null,
+  $whiteness: null, $blackness: null,
+  $alpha: null)
+adjust-color(...) */
+
+.implementasi {
+    p {
+        font-size: 1.2em;
+    }
+    .contoh1{
+        color :adjust-color($color: $warna-dasar, $green: 100, $blue:100, $red:-100);
+    }
+    .contoh2{
+        color: adjust-hue($color: $warna-dasar, $degrees: 30deg);
+    }
+    //comploment color
+    .contoh3{
+        color: complement($color: $warna-dasar);
+    }
+}
